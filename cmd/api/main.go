@@ -34,5 +34,5 @@ func main() {
 
 	// handlers.NewEventHandler(privateRoutes.Group("/protected"), someRepository)
 
-	app.Listen(fmt.Sprintf(":" + envConfig.ServerPort))
+	app.Listen(fmt.Sprintf("%s", ":" + envConfig.ServerPort))
 }
